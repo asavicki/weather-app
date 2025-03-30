@@ -1,0 +1,60 @@
+.fiveDayForecastContainer {
+    margin: 10px auto 50px;
+    text-align: center;
+  
+    h2 {
+      color: var(--rain-blue);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    .fiveDayForecastCard {
+      display: inline-flex;
+      flex-direction: column;
+      width: 300px;
+      margin: 10px;
+      padding: 15px 0px 15px 15px;
+      background-color: var(--cloud-gray);
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      .dataWrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        justify-content: center;
+      }
+  
+      .data {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+  
+        p {
+          margin: 0;
+          font-size: 1rem;
+          color: var(--text-dark);
+          display: flex;
+          flex-direction: column;
+  
+          strong {
+            font-weight: bold;
+            color: var(--rain-blue);
+            margin-bottom: 5px;
+          }
+  
+          span {
+            font-size: 0.9rem;
+          }
+        }
+      }
+  
+      .weatherIcon {
+        width: 70px;
+        height: 70px;
+        align-self: center;
+      }
+    }
+  }

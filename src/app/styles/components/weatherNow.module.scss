@@ -1,0 +1,136 @@
+.weatherNow {
+    max-width: 1600px;
+    width: 100%;
+    margin: 20px auto 10px;
+    display: flex;
+    gap: 20px;
+  
+    .card {
+      padding: 20px;
+      background-color: var(--cloud-gray);
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 768px;
+  
+      h2 {
+        color: var(--rain-blue);
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+      }
+  
+      .dataWrapper {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+      }
+  
+      .data {
+        p {
+          margin: 5px;
+          font-size: 1.1rem;
+          color: var(--text-dark);
+          strong {
+            font-weight: bold;
+            color: var(--rain-blue);
+          }
+        }
+      }
+  
+      .weatherIcon {
+        width: 100px;
+        height: 100px;
+        align-self: center;
+      }
+    }
+  
+    .message {
+      flex: 2;
+      padding: 20px;
+      background-color: var(--text-light);
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      h1 {
+        color: var(--rain-blue);
+        font-size: 3rem;
+        text-align: center;
+        margin: 0;
+      }
+    }
+  
+    // Responsive styles
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+  
+      .card {
+        max-width: 600px; /* Your new max-width */
+        width: 100%;
+        margin: 0 auto; /* Center horizontally */
+        display: flex; /* Enable flex for centering */
+        flex-direction: column; /* Stack vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+  
+        .dataWrapper {
+          justify-content: center; /* Center data + icon horizontally */
+        }
+      }
+  
+      .message {
+        order: 1; /* Above .card */
+        width: 100%;
+        flex: none;
+        background-color: transparent; /* No background */
+        box-shadow: none; /* Remove shadow */
+  
+        h1 {
+          font-size: 2rem;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Shadow on letters only */
+        }
+      }
+  
+      .card {
+        order: 2; /* Below .message */
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .weatherNow {
+      margin:0 auto 5px; /* Tighter margins */
+      gap: 8px;
+  
+      .card {
+        padding: 15px; /* Less padding */
+        
+        h2 {
+          font-size: 1.5rem; /* Smaller heading */
+        }
+  
+        .data {
+          p {
+            font-size: 0.9rem; /* Smaller text */
+            margin: 3px;
+          }
+        }
+  
+        .weatherIcon {
+          width: 80px;
+          height: 80px; /* Smaller icon */
+        }
+      }
+  
+      .message {
+        padding: 15px;
+  
+        h1 {
+          font-size: 1.6rem; /* Even smaller */
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtler shadow */
+        }
+      }
+    }
+  }

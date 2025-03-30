@@ -1,0 +1,48 @@
+:root {
+    --sky-blue: #87CEFA;
+    --rain-blue: #4682B4;
+    --sun-yellow: #FFC107;
+    --cloud-gray: #E0E7FF;
+    --background: #F5F7FA;
+    --text-dark: #1A3C34;
+    --text-light: #FFFFFF;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+//   //Rsponsive design
+//   @media (max-width: 768px) {
+//     .weatherNow {
+//         flex-direction: column;
+//         gap: 10px;
+    
+//         .card {
+//           max-width: 100%;
+//           order: 2 !important;
+//         }
+    
+//         .message {
+//           order: 1 !important;
+//           width: 100%;
+//           flex: none;
+    
+//           h1 {
+//             font-size: 2rem;
+//           }
+//         }
+//       }
+//   }

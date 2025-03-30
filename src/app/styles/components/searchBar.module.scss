@@ -1,0 +1,128 @@
+.searchBar {
+    position: relative;
+    max-width: 700px; /* Cap width, not fixed */
+    width: 100%; /* Shrink with parent */
+    margin: 70px auto 35px;
+    padding: 6px;
+    background-color: var(--cloud-gray);
+    border-radius: 25px;
+    box-shadow: none;
+  
+    .searchInput {
+      width: 100%;
+      padding: 12px 45px 12px 15px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.1rem;
+      outline: none;
+      background-color: var(--cloud-gray);
+      color: var(--text-dark);
+      box-shadow: none;
+      box-sizing: border-box; /* Ensure padding fits */
+    }
+  
+    .searchIcon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      width: 24px;
+      height: 24px;
+    }
+  
+    ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      margin-top: 5px;
+      list-style: none;
+      background-color: var(--cloud-gray);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 10;
+  
+      li {
+        padding: 15px 10px;
+        color: var(--text-dark);
+        font-size: 1.1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--sun-yellow);
+          color: var(--text-dark);
+        }
+  
+        &.selected {
+          background-color: var(--sun-yellow);
+          color: var(--text-dark);
+        }
+  
+        button {
+          width: 100%;
+          text-align: left;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: inherit;
+          font-size: inherit;
+          padding: 0;
+          margin: 0;
+          display: block;
+        }
+      }
+    }
+  
+    p {
+      text-align: center;
+      color: var(--rain-blue);
+    }
+  
+     //Responsive design
+    @media (max-width: 768px) {
+      padding: 4px; /* Slightly tighter on mobile */
+      margin: 40px auto 20px; /* Reduce margins */
+      
+      .searchInput {
+        font-size: 1rem; /* Slightly smaller */
+        padding: 10px 40px 10px 12px; /* Adjust padding */
+      }
+  
+      .searchIcon {
+        right: 10px; /* Adjust for smaller input */
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+ 
+  @media (max-width: 480px) {
+    .searchBar {
+      width: 85%; /* Even tighter fit */
+      margin: 30px auto 15px; /* Smaller margins */
+      padding: 4px;
+  
+      .searchInput {
+        font-size: 0.9rem; /* Smaller text */
+        padding: 8px 35px 8px 10px; /* Tighter padding */
+      }
+  
+      .searchIcon {
+        right: 8px;
+        width: 18px;
+        height: 18px; /* Smaller icon */
+      }
+  
+      ul {
+        max-height: 150px; /* Shorter dropdown */
+        
+        li {
+          padding: 10px 8px; /* Smaller list items */
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
