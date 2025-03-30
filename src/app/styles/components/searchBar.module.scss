@@ -1,7 +1,7 @@
 .searchBar {
     position: relative;
-    max-width: 700px; /* Cap width, not fixed */
-    width: 100%; /* Shrink with parent */
+    max-width: 700px;
+    width: 100%;
     margin: 70px auto 35px;
     padding: 6px;
     background-color: var(--cloud-gray);
@@ -18,7 +18,7 @@
       background-color: var(--cloud-gray);
       color: var(--text-dark);
       box-shadow: none;
-      box-sizing: border-box; /* Ensure padding fits */
+      box-sizing: border-box;
     }
   
     .searchIcon {
@@ -82,16 +82,16 @@
   
      //Responsive design
     @media (max-width: 768px) {
-      padding: 4px; /* Slightly tighter on mobile */
-      margin: 40px auto 20px; /* Reduce margins */
+      padding: 4px;
+      margin: 40px auto 20px;
       
       .searchInput {
-        font-size: 1rem; /* Slightly smaller */
-        padding: 10px 40px 10px 12px; /* Adjust padding */
+        font-size: 1rem;
+        padding: 10px 40px 10px 12px;
       }
   
       .searchIcon {
-        right: 10px; /* Adjust for smaller input */
+        right: 10px; 
         width: 20px;
         height: 20px;
       }
@@ -101,26 +101,26 @@
  
   @media (max-width: 480px) {
     .searchBar {
-      width: 85%; /* Even tighter fit */
-      margin: 30px auto 15px; /* Smaller margins */
+      width: 85%;
+      margin: 30px auto 15px;
       padding: 4px;
   
       .searchInput {
-        font-size: 0.9rem; /* Smaller text */
-        padding: 8px 35px 8px 10px; /* Tighter padding */
+        font-size: 0.9rem;
+        padding: 8px 35px 8px 10px;
       }
   
       .searchIcon {
         right: 8px;
         width: 18px;
-        height: 18px; /* Smaller icon */
+        height: 18px; 
       }
   
       ul {
-        max-height: 150px; /* Shorter dropdown */
+        max-height: 150px;
         
         li {
-          padding: 10px 8px; /* Smaller list items */
+          padding: 10px 8px; 
           font-size: 0.9rem;
         }
       }

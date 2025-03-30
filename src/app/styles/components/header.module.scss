@@ -16,12 +16,12 @@
   
   @media (max-width: 480px) {
     .header {
-      padding: 8px; /* Tighter padding */
-      flex-direction: column; /* Stack for small screens */
-      gap: 10px; /* Space between items */
+      padding: 8px;
+      flex-direction: column;
+      gap: 10px;
   
       p {
-        font-size: 1.4rem; /* Smaller text */
+        font-size: 1.4rem;
       }
     }
   }

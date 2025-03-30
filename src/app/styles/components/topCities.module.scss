@@ -42,22 +42,22 @@
   //Responsive styles
   @media (max-width: 480px) {
     .topCities {
-      max-width: 100%; /* Full width */
-      padding: 0 10px; /* Add some padding */
+      max-width: 100%; 
+      padding: 0 10px; 
   
       ul {
-        gap: 10px; /* Tighter gap */
+        gap: 10px; 
   
         li {
           button {
-            padding: 8px 15px; /* Smaller buttons */
+            padding: 8px 15px; 
             font-size: 0.9rem;
           }
         }
       }
   
       h3 {
-        font-size: 1.3rem; /* Smaller heading */
+        font-size: 1.3rem;
       }
     }
   }

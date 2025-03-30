@@ -15,12 +15,12 @@ export default function WeatherNow() {
         <h2>Current Weather in {weatherData.location.name}</h2>
         <div className={styles.dataWrapper}>
           <div className={styles.data}>
-            <p><strong>Date - </strong> {formatDate(weatherData.current.last_updated)}</p>
-            <p><strong>Temp - </strong> {weatherData.current.temp_c}°C</p>
-            <p><strong>Condition - </strong> {weatherData.current.condition.text}</p>
-            <p><strong>Humidity - </strong> {weatherData.current.humidity}%</p>
-            <p><strong>Wind - </strong> {weatherData.current.wind_kph} km/h</p>
-            <p><strong>Feels Like - </strong> {weatherData.current.feelslike_c}°C</p>
+            <p><strong>Date</strong>{formatDate(weatherData.current.last_updated)}</p>
+            <p><strong>Temp</strong>{weatherData.current.temp_c}°C</p>
+            <p><strong>Condition</strong>{weatherData.current.condition.text}</p>
+            <p><strong>Humidity</strong>{weatherData.current.humidity}%</p>
+            <p><strong>Wind</strong>{weatherData.current.wind_kph} km/h</p>
+            <p><strong>Feels Like</strong>{weatherData.current.feelslike_c}°C</p>
           </div>
           <Image
             src={`https:${weatherData.current.condition.icon}`}

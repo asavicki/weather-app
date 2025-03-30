@@ -3,10 +3,10 @@
     background-color: var(--sky-blue);
     color: var(--text-dark);
     display: flex;
-    flex-direction: column; /* Stack vertically */
-    align-items: center; /* Center horizontally */
-    gap: 15px; /* Space between items */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
   
     p {
       color: var(--text-dark);
@@ -15,7 +15,7 @@
   
     .resources {
       display: flex;
-      flex-direction: column; /* Stack links vertically */
+      flex-direction: column;
       gap: 10px;
   
       a {
@@ -30,11 +30,11 @@
 
   @media (max-width: 480px) {
     .footer {
-      padding: 10px; /* Tighter padding */
-      gap: 15px; /* Smaller gap */
+      padding: 10px;
+      gap: 15px;
   
       p {
-        font-size: 0.9rem; /* Smaller text */
+        font-size: 0.9rem;
       }
   
       details {
@@ -45,7 +45,7 @@
         ul {
           li {
             a {
-              font-size: 0.8rem; /* Smaller links */
+              font-size: 0.8rem;
             }
           }
         }
@@ -53,7 +53,7 @@
   
       .logoText {
         img {
-          width: 80px; /* Smaller logo */
+          width: 80px;
           height: auto;
         }
       }
