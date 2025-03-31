@@ -10,10 +10,13 @@ export default function TopCities() {
   const { setWeatherData } = useWeather();
   const [topCities, setTopCities] = useState([]);
 
+  // Updates top cities every second based on views
   useEffect(() => {
     const interval = setInterval(() => {
         const allCities = getTopCities();
-        const topThree = allCities.sort((a, b) => b.views - a.views).slice(0, 3);
+        const topThree = allCities
+          .sort((a, b) => b.views - a.views) // Sort by views (descending)
+          .slice(0, 3); // Take top 3
         setTopCities(topThree);
     }, 1000);
     return () => clearInterval(interval);

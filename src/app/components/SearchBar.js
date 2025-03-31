@@ -17,6 +17,8 @@ export default function SearchBar() {
     setQuery(event.target.value);
   };
 
+
+  // Fetches city suggestions with a 300ms debounce when query changes
   useEffect(() => {
     if (!query) {
       setCities([]);
@@ -31,6 +33,8 @@ export default function SearchBar() {
     return () => clearTimeout(delayDebounceFn);
   }, [query]);
 
+
+// Handles arrow key navigation and Enter to select a city
   const handleKeyDown = (event) => {
     if (event.key === "ArrowDown") {
       setSelectedIndex((prevIndex) => Math.min(prevIndex + 1, cities.length - 1));
@@ -41,6 +45,7 @@ export default function SearchBar() {
     }
   };
 
+  // Processes city selection: logs it, fetches weather, updates context
   const handleCitySelect = async (city) => {
     setQuery(city.name);
     setCities([]);
