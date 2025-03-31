@@ -19,8 +19,9 @@
       gap: 10px;
   
       a {
-        color: var(--rain-blue);
+        color: var(--text-dark);
         text-decoration: none;
+        font-weight: bold;
         &:hover {
           text-decoration: underline;
         }

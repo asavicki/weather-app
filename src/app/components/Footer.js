@@ -13,17 +13,17 @@ export default function Footer() {
         />
         <p>Created by Andžej Savicki, 2023</p>
       </div>
-      <details>
+      <details className={styles.resources}>
         <summary>Resources</summary>
         <ul>
           <li>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.geonames.org/" target="_blank">
               GeoNames
             </a>
             <span> - free API for location data</span>
           </li>
           <li>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.weatherapi.com/" target="_blank">
               WeatherAPI
             </a>
             <span> - free API for weather data</span>

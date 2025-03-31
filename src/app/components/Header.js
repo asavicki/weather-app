@@ -10,7 +10,6 @@ export default function Header() {
                 width={300}
                 height={100}
                 alt="Picture of the author"
-                clas
             />
         </header>
     );
