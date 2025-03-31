@@ -169,7 +169,7 @@ Displays current weather data.
 
 Shows a 5-day weather forecast, excluding the current day.
 
-### **MostViewedCities** (`components/MostViewedCities.js`)
+### **TopCities** (`components/TopCities.js`)
 
 Displays the three most-viewed cities stored in local storage.
 
