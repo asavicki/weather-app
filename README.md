@@ -5,7 +5,7 @@ Weather App
 Overview
 --------
 
-The Weather App is a **single-page web application** built with **Next.js** that allows users to search for a city's current weather and a 5-day forecast. It fetches weather data from **WeatherAPI** and city information from **GeoNames API**. The app also keeps track of the three most-viewed cities using **local storage**.
+The Weather App is a **single-page web application** built with **Next.js** that allows users to search for a city's current weather and a 5-day forecast. It fetches weather data from **WeatherAPI** and city information from **GeoNames API**. The app also keeps track of the three most-viewed cities using **local storage**. It also logs user actions into the console performed in UI for the selected city.
 
 Features
 --------
@@ -23,7 +23,9 @@ Features
 Technologies Used
 -----------------
 
--   **Next.js** (React Framework)
+-   **Next.js** (Front-end)
+
+-   **Node.js** (Back-end)
 
 -   **Context API** (State Management)
 
@@ -167,7 +169,7 @@ Displays current weather data.
 
 Shows a 5-day weather forecast, excluding the current day.
 
-### **MostViewedCities** (`components/MostViewedCities.js`)
+### **TopCities** (`components/TopCities.js`)
 
 Displays the three most-viewed cities stored in local storage.
 
